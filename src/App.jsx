@@ -189,7 +189,7 @@ function App() {
       <div className="w-full max-w-5xl p-5 bg-black/30 backdrop-blur-md sticky top-0 z-10 border-b border-amber-800 shadow-lg rounded-b-xl">
         <div className="flex justify-between items-center">
           <div className="flex flex-col">
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-amber-400 tracking-wide">
+            <h1 className=" tsm:text-3xl font-extrabold text-amber-400 tracking-wide">
               ⚡ Sain Media AI
             </h1>
             <p className="text-sm text-gray-400 mt-1">
@@ -221,73 +221,76 @@ function App() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-5xl font-bold text-gray-200 mb-10 mt-20 text-center"
+              className="text-5xl font-bold text-yellow-400 mb-10 mt-20 text-center"
             >
-              What can I help with today?
+              How can Sain Media AI help you today?
             </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 w-full max-w-3xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 w-full max-w-5xl px-4">
               <motion.button
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2, duration: 0.4 }}
                 whileHover={{
-                  scale: 1.03,
-                  backgroundColor: "rgba(30, 30, 30, 0.6)",
-                }} // bg-gray-800 with opacity
+                  scale: 1.05,
+                  backgroundColor: "rgba(255, 255, 0, 0.05)",
+                }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-gray-900 bg-opacity-40 text-gray-200 p-5 rounded-xl border border-gray-700 shadow-lg flex flex-col items-start text-left backdrop-blur-sm"
+                className="bg-black text-yellow-400 p-5 rounded-xl border border-yellow-600 shadow-md flex flex-col items-start text-left backdrop-blur-md"
                 onClick={() =>
-                  handleSuggestionClick("Help me create a presentation")
+                  handleSuggestionClick("Create a reel script for Instagram")
                 }
               >
-                <div className="font-semibold text-lg text-amber-300">
-                  Content Help
+                <div className="font-semibold text-lg">
+                  🎬 Reels Script Generator
                 </div>
-                <div className="text-sm text-gray-400 mt-1">
-                  Generate ideas or drafts for presentations, reports, and more.
+                <div className="text-sm text-yellow-200 mt-1">
+                  Get engaging short-form content tailored for your audience.
                 </div>
               </motion.button>
+
               <motion.button
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.4, duration: 0.4 }}
                 whileHover={{
-                  scale: 1.03,
-                  backgroundColor: "rgba(30, 30, 30, 0.6)",
+                  scale: 1.05,
+                  backgroundColor: "rgba(255, 255, 0, 0.05)",
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-gray-900 bg-opacity-40 text-gray-200 p-5 rounded-xl border border-gray-700 shadow-lg flex flex-col items-start text-left backdrop-blur-sm"
+                className="bg-black text-yellow-400 p-5 rounded-xl border border-yellow-600 shadow-md flex flex-col items-start text-left backdrop-blur-md"
                 onClick={() =>
-                  handleSuggestionClick("Give me some creative ideas")
+                  handleSuggestionClick(
+                    "Suggest viral video ideas for my niche"
+                  )
                 }
               >
-                <div className="font-semibold text-lg text-amber-300">
-                  Creative Suggestions
+                <div className="font-semibold text-lg">
+                  🚀 Viral Video Ideas
                 </div>
-                <div className="text-sm text-gray-400 mt-1">
-                  Brainstorm new concepts, solutions, or innovative approaches.
+                <div className="text-sm text-yellow-200 mt-1">
+                  Brainstorm high-engagement content ideas based on trends.
                 </div>
               </motion.button>
+
               <motion.button
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6, duration: 0.4 }}
                 whileHover={{
-                  scale: 1.03,
-                  backgroundColor: "rgba(30, 30, 30, 0.6)",
+                  scale: 1.05,
+                  backgroundColor: "rgba(255, 255, 0, 0.05)",
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-gray-900 bg-opacity-40 text-gray-200 p-5 rounded-xl border border-gray-700 shadow-lg flex flex-col items-start text-left backdrop-blur-sm"
+                className="bg-black text-yellow-400 p-5 rounded-xl border border-yellow-600 shadow-md flex flex-col items-start text-left backdrop-blur-md"
                 onClick={() =>
-                  handleSuggestionClick("Assist with my job application")
+                  handleSuggestionClick("Write a client DM message")
                 }
               >
-                <div className="font-semibold text-lg text-amber-300">
-                  Job Application Assistant
+                <div className="font-semibold text-lg">
+                  💬 Client Message Helper
                 </div>
-                <div className="text-sm text-gray-400 mt-1">
-                  Refine resumes, write cover letters, and prepare for
-                  interviews.
+                <div className="text-sm text-yellow-200 mt-1">
+                  Craft professional DMs or replies to leads & collaborators.
                 </div>
               </motion.button>
             </div>
