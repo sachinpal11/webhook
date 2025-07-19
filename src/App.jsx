@@ -189,7 +189,7 @@ function App() {
       <div className="w-full max-w-5xl p-5 bg-black/30 backdrop-blur-md sticky top-0 z-10 border-b border-amber-800 shadow-lg rounded-b-xl">
         <div className="flex justify-between items-center">
           <div className="flex flex-col">
-            <h1 className="text-3xl font-extrabold text-amber-400 tracking-wide">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-amber-400 tracking-wide">
               ⚡ Sain Media AI
             </h1>
             <p className="text-sm text-gray-400 mt-1">
